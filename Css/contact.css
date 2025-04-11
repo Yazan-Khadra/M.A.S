@@ -1,0 +1,313 @@
+@font-face { 
+    font-family: "Tajawal"; 
+    src: url("/Fonts/Tajawal/Tajawal-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "29LT Bukra"; 
+    src: url("/Fonts/Bukra/29ltbukraregular.ttf"); 
+}
+@font-face { 
+    font-family: "Almarai"; 
+    src: url("/Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "Montserrat"; 
+    src: url("/Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+
+}
+ html,body {
+    overflow-x: hidden;
+   
+ }
+:root {
+    --main-color: #151635;
+    --secondry-color: #FFF;
+}
+
+
+.contaner {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+@media (min-width: 768px) {
+    .contaner {
+        width: 800px;
+    }
+
+   
+}
+/* midium screen divices */
+@media (min-width: 992px){
+    .contaner {
+        width: 1000px;
+    }
+   
+}
+/*large divices*/ 
+@media (min-width: 1200px){
+    .contaner {
+        width: 90%;
+    }
+}
+
+.intro {
+    background-image: url("/Images/backgrounds/contact-us-image.jpg");
+    background-size:cover;
+    background-position:center;
+    position: relative;
+    width: 100vw;
+    height: 520px;
+}
+.blend {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 12, 43, 0.60);
+ 
+}
+/* intro-text */
+.intro-text {
+    display: block;
+    position: relative;
+}
+.intro-text .contaner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:-50px;
+}
+.intro-text .contaner .text {
+    display: block;
+    position: relative;
+    height: 100%;
+    margin-top:0;
+}
+.intro-text .contaner .text h2 {
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 54.179px;
+font-style: normal;
+font-weight: 700;
+line-height: 65.014px; /* 120% */
+  
+}
+.intro-text .contaner .text p {
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 19.03px;
+font-style: normal;
+font-weight: 700;
+line-height: 11.287px; /* 125% */
+letter-spacing: 1.505px;
+margin-bottom: 10px;
+
+}
+@media (max-width: 768px){
+    .contaner .text h2 {
+        font-size: 37.190px;
+    }
+}
+.contact-us {
+    position: relative;
+    width: 100vw;
+    background-color: var(--main-color);
+   
+}
+.contact-us .top-triangle {
+    position: absolute;
+    width: 50%;
+    height: 35%;
+    top:0;  
+    right: 0;
+    background-color: var(--secondry-color);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+@media (max-width:767px) {
+    .contact-us .top-triangle {
+        width: 90%;
+        height: 15%;
+    }
+}
+.contact-us .bottom-triangle {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 50%;
+    height: 35%;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+@media (max-width:767px) {
+    .contact-us .bottom-triangle {
+        display: none;
+    }
+}
+.contact-us .contaner .special-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+
+}
+.contact-us .contaner .special-heading h1 {
+    color: rgba(0, 0, 0, 0.16);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 69.228px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 69.228px; /* 100% */
+    margin: 0;
+}
+
+.contact-us .contaner .special-heading h2 {
+    color: #D6D6D6;
+    text-align: center;
+    font-family: Inter;
+    font-size: 75.248px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90.298px; /* 120% */
+    margin-top: -30px;
+}
+@media (max-width:767px) {
+    .contact-us .contaner .special-heading h1 {
+        font-size: 40px;
+    }
+    .contact-us .contaner .special-heading h2 {
+        font-size: 60px;
+    }
+}
+.contact-us .contact-us-content {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 30px;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 7%;
+   
+}
+.contact-us .contact-us-content .icon {
+    width: 111.367px;
+    height: 111.367px;
+    flex-shrink: 0;
+    border-radius: 4.515px;
+    background: #D6D6D6;
+}
+.contact-us .contact-us-content .srv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact-us .contact-us-content .srv svg {
+    transform: translate(-21px,21px);
+}
+.contact-us .contact-us-content h3 {
+    color: #FFF;
+text-align: center;
+font-family: Almarai;
+font-size: 24.079px;
+font-style: normal;
+font-weight: 700;
+line-height: 15.05px; /* 62.5% */
+margin-bottom: 10px;
+}
+.contact-us .contact-us-content h4 {
+    color: #FFF;
+text-align: center;
+font-family: Almarai;
+font-size: 24.079px;
+font-style: normal;
+font-weight: 300;
+line-height: 35.05px; /* 62.5% */
+direction: ltr;
+}
+.contact-us .contaner .contact-us-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.contact-us .contaner .contact-us-footer h1 {
+    color: #FFF;
+text-align: center;
+font-family: "29LT Bukra";
+font-size: 36.119px;
+font-style: normal;
+font-weight: 700;
+line-height: 29.347px; /* 81.25% */
+}
+@media (max-width:767px) {
+    .contact-us .contaner .contact-us-footer h1 {
+        font-size: 26px;
+
+    }
+    .contact-us .contact-us-content h4 {
+        font-size: 20px;
+    }
+}
+.contact-us .contaner .contact-us-footer .social-media-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    margin-left: 1%;
+}
+.contact-us .contaner .contact-us-footer .social-media-contact svg {
+    transition-delay:650ms;
+}
+.contact-us .contaner .contact-us-footer .social-media-contact svg:hover {
+    scale: 1.10;
+}
+.contact-us .contaner .contact-us-footer .map img {
+    margin-bottom: 20%;
+}
+@media (max-width:767px) {
+    .contact-us .contaner .contact-us-footer .map img {
+        width: 355px;
+        height: 255px;
+    }
+}
+/* animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2.5s;
+}
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

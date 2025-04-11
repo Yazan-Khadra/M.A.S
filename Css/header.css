@@ -1,0 +1,135 @@
+.header .contaner {
+    display: flex;
+     flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+       
+}
+.header .contaner img {
+    position: relative;
+    top:45px;
+    width: 212.876px;
+    margin-left: 50px;
+}
+@media (max-width: 767px){
+    
+    .header .contaner img  {
+     position: relative;
+    top:0;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 80.55px;
+  }
+}
+
+
+.header .contaner .links{
+    display: block;
+    position:relative;
+    flex: 1;
+}
+.header .links .mobile-icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position:absolute;
+    top:50px;
+    z-index: 1;
+    cursor: pointer;
+}
+.header .links .mobile-icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 3px;
+    transition: 0.3s;
+    width: 100%;
+}
+@media (min-width:767px){
+    .header .links .mobile-icon {
+        display: none;
+    }
+}
+
+
+.header .contaner .links ul {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex: 1;
+    
+}
+@media (max-width: 767px){
+    .header .contaner .links ul {
+       display: none;
+       
+    }
+}
+@media (max-width: 992px){
+    .header .contaner .links ul {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+  
+   
+}
+/*large divices*/ 
+/* @media (min-width: 1200px){
+    ul { 
+        gap:50px;
+    }
+    img {
+        width: 130px;
+    }
+} */
+
+
+.header .contaner .links li {
+    position: relative;
+    height: 35.529px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 11.912px;
+    transform: 0.3s ease;
+    white-space: nowrap;
+    list-style: none;
+    z-index: 1;
+}
+.header .contaner .links li a {
+    position: relative;
+    color: var(--secondry-color);
+    font-family: "Montserrat";
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+   z-index: 2;
+}
+.header .contaner .links li::after {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 11.242px;
+    background: rgba(0, 0, 0, 0.16);
+    right:0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease;
+}
+
+.header .contaner .links .hoverAble:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.active {
+   display: block;
+   position: relative;
+    background: rgba(0, 0, 0, 0.16);
+}

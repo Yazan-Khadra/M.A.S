@@ -1,18 +1,18 @@
 @font-face { 
     font-family: "Tajawal"; 
-    src: url("/Fonts/Tajawal/Tajawal-Regular.ttf"); 
+    src: url("Fonts/Tajawal/Tajawal-Regular.ttf"); 
 }
 @font-face { 
     font-family: "29LT Bukra"; 
-    src: url("/Fonts/Bukra/29ltbukraregular.ttf"); 
+    src: url("Fonts/Bukra/29ltbukraregular.ttf"); 
 }
 @font-face { 
     font-family: "Almarai"; 
-    src: url("/Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
+    src: url("Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
 }
 @font-face { 
     font-family: "Montserrat"; 
-    src: url("/Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
+    src: url("Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
 }
 
 

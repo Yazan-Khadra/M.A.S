@@ -27,11 +27,11 @@ function See_All_Products() {
     let current = 0;
 const slider = document.querySelector(".intro");
 const images = [
-    "/Images/backgrounds/Home.png",
-    "/Images/Slider/image-1.jpg",
-    "/Images/Slider/image-2.jpg",
-    "/Images/Slider/image-3.jpg",
-    "/Images/Slider/image4.jpg",
+    "Images/backgrounds/Home.png",
+    "Images/Slider/image-1.jpg",
+    "Images/Slider/image-2.jpg",
+    "Images/Slider/image-3.jpg",
+    "Images/Slider/image4.jpg",
     
 ];
 function Change_Background(){

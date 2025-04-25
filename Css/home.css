@@ -553,7 +553,7 @@ li {
     top:calc(100% + 5px);
     
 }
-.services .contaner .title h3 {
+.services .container .title h3 {
     color: #B2B2B2;
 text-align: right;
 font-family: Almarai;
@@ -562,7 +562,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 15.094px; /* 62.5% */
 }
-.services .contaner .title h3::before {
+.services .container .title h3::before {
     content: "";
     position: absolute;
     width: 163.015px;

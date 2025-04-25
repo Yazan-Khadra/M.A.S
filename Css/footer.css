@@ -1,19 +1,49 @@
+@font-face { 
+    font-family: "Inter"; 
+    src: url("../Fonts/Tajawal/Tajawal-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "29LT Bukra"; 
+    src: url("../Fonts/Bukra/29ltbukraregular.ttf"); 
+}
+@font-face { 
+    font-family: "Almarai"; 
+    src: url("../Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "Montserrat"; 
+    src: url("../Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
 li {
     cursor: pointer;
 }
+
 .end-footer {
     display: block;
     width: 100vw;
     background-color: var(--main-color);
 }
+
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-gap: 45px;
 }
+
 .footer-content .image {
     margin-top: 25px;
 }
+
 .footer-content .image img {
     width: 212.283px;
 }
@@ -22,8 +52,8 @@ li {
     display: block;
     position: relative;
     margin-top: 50px;
-    
 }
+
 .app-bar ul {
     display: flex;
     flex-direction: column;
@@ -33,6 +63,7 @@ li {
     list-style: none;
     margin-top: 10px;
 }
+
 .app-bar li {
     position: relative;
     width: 300px;
@@ -40,19 +71,17 @@ li {
     margin-bottom: 10px;
 }
 
-.app-bar ul li a  {
-text-decoration: none;
-color: #FFF;
-text-align: right;
-font-family: Almarai;
-font-size: 19.585px;
-font-style: normal;
-font-weight: 300;
-line-height: 29.433px; /* 216.667% */
-transition: 0.3s ease;
-margin-bottom: 5px;
-
-    
+.app-bar ul li a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: right;
+    font-family: "Almarai";
+    font-size: 19.585px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29.433px;
+    transition: 0.3s ease;
+    margin-bottom: 5px;
 }
 
 .app-bar li::after {
@@ -60,112 +89,105 @@ margin-bottom: 5px;
     position: absolute;
     width: 80%;
     height: 2.5px;
-    top:100%;
+    top: 100%;
     right: 0;
     bottom: 0;
     left: 0;
     border-radius: 22.641px;
     background: #D6D6D6;
     transition: 0.3s ease;
-
 }
+
 .app-bar li:hover::after {
     width: 100%;
-    
 }
+
 .footer-content .info {
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap:25px;
+    gap: 25px;
     margin-right: 20px;
     margin-top: 20px;
 }
 
-
 .info .title h4 {
     color: #FFF;
-text-align: right;
-font-family: Almarai;
-font-size: 20.585px;
-font-style: normal;
-font-weight: 300;
-line-height: 29.433px; /* 216.667% */
+    text-align: right;
+    font-family: "Almarai";
+    font-size: 20.585px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29.433px;
 }
+
 .info .address {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
+
 .info .address::after {
     content: "";
-    position:absolute;
+    position: absolute;
     width: 150%;
-    height: 1.50px;
+    height: 1.5px;
     background-color: #FFF;
-    top:calc(100% + 10px);
+    top: calc(100% + 10px);
 }
+
 .info .address img {
     width: 20.717px;
     flex-shrink: 0;
     fill: #D9D9D9;
-    
 }
-@media (max-width:767px) {
-    .info .address img {
-        padding-bottom: 25px;
-    }
-}
+
 .info .address p {
     color: #FFF;
-text-align: right;
-font-family: Almarai;
-font-size: 20.585px;
-font-style: normal;
-font-weight: 300;
-line-height: 29.433px; /* 216.667% */
-white-space: nowrap;
-padding:0;
+    text-align: right;
+    font-family: "Almarai";
+    font-size: 20.585px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29.433px;
+    white-space: nowrap;
+    padding: 0;
 }
-@media (max-width:767px) {
-    .info .address p {
-        white-space: wrap;
-    }
-   
-}
+
 .info .help h3 {
     color: #FFF;
     text-align: right;
-    font-family: Almarai;
+    font-family: "Almarai";
     font-size: 25.15px;
     font-style: normal;
     font-weight: 600;
-    line-height: 29.433px; /* 121.875% */
+    line-height: 29.433px;
     margin-bottom: 3px;
 }
+
 .info .help p {
     color: #FFF;
     text-align: right;
-    font-family: Almarai;
+    font-family: "Almarai";
     font-size: 22.15px;
     font-style: normal;
     font-weight: 550;
-    line-height: 29.433px; /* 121.875% */
-
+    line-height: 29.433px;
 }
+
 .social-links {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
+
 .social-links ul {
     display: flex;
     flex-direction: row;
@@ -175,49 +197,185 @@ padding:0;
     list-style: none;
     flex: 1;
     margin: auto;
-    
 }
+
 .social-links ul li {
     padding-bottom: 50px;
     padding-right: 15px;
     cursor: default;
-   
 }
+
 .social-links ul li img {
     fill: #FFF;
     width: 35.807px;
-    
     flex-shrink: 0;
     text-decoration: none;
     background-color: transparent;
     cursor: pointer;
     transition: 0.3s ease;
 }
+
+.social-links ul li svg {
+    width: 100%;
+    margin: 0;
+    fill: #FFF;
+    width: 35.807px;
+    flex-shrink: 0;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.social-links ul li svg:hover,
 .social-links li img:hover {
     scale: 1.15;
 }
+
 .social-links .languages {
     display: flex;
-    position:relative;
+    position: relative;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap:15px;
+    gap: 15px;
     margin-bottom: 40px;
     margin-left: 6%;
 }
-@media (max-width:767px) {
-    .social-links .languages {
-        flex-direction: column;
-        gap:5px;
-    }
-}
-.languages img {
+
+.languages span {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 1.3rem;
     width: 35.773px;
     padding-bottom: 10px;
     cursor: pointer;
     transition: 0.3s ease;
 }
-.languages img:hover {
+
+.languages span:hover {
     scale: 1.05;
 }
+
+/* ✅ حقوق النشر */
+.copyright {
+    width: 100%;
+     /* أو استخدم var(--main-color) إذا كان أغمق */
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFF;
+    font-family: "Almarai";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* responsive styling for copyright */
+@media (max-width: 768px) {
+    .copyright {
+        font-size: 13px;
+        padding: 12px 5px;
+    }
+}
+
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        padding: 20px 10px;
+    }
+
+    .footer-content .image img {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    .footer-content .app-bar {
+        margin-top: 0;
+        display: none;
+    }
+
+    .app-bar ul {
+        align-items: center;
+    }
+
+    .app-bar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .app-bar ul li a {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .footer-content .info {
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .info .address {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 8%;
+    }
+
+    .info .address::after {
+        width: 100%;
+    }
+    .info .address p {
+      
+       padding: 15px;
+        font-size: 1rem;
+    }
+    .info .help {
+        margin:3%;
+    }
+    .info .help h3 {
+        font-size: 20px;
+    }
+
+    .info .help p {
+        font-size: 18px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .social-links ul {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .social-links ul li {
+        padding: 0;
+    }
+
+    .social-links .languages {
+        margin-left: 0;
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .languages span {
+        font-size: 1.3rem;
+    }
+
+    .copyright {
+        font-size: 1.1rem;
+        padding: 12px 5px;
+       
+    }
+}
+

@@ -3,16 +3,18 @@ let action_button = document.querySelector("button");
 
     let pargraphs = document.querySelector(".pargraphs");
     action_button.onclick = function(){
-    if(window.getComputedStyle(pargraphs).display === "none"){
+    if(window.getComputedStyle(pargraphs).opacity == "0"){
         action_button.textContent = "اخفاء";
-        
-        pargraphs.style.display = "block";
+        pargraphs.style.opacity = "1";
+        pargraphs.style.height = "80%";
+       
 
     }
     else {
-        
-        pargraphs.style.display = "none";
+        pargraphs.style.opacity = "0";
+        pargraphs.style.height = "0";
         action_button.textContent = "قراءة المزيد";
+        
      }
     
   }
@@ -27,23 +29,22 @@ function See_All_Products() {
     let current = 0;
 const slider = document.querySelector(".intro");
 const images = [
-    "/Images/backgrounds/Home.png",
-    "/Images/Slider/image-1.jpg",
-    "/Images/Slider/image-2.jpg",
-    "/Images/Slider/image-3.jpg",
-    "/Images/Slider/image4.jpg",
+    "../Images/backgrounds/Home.png",
+    "../Images/Slider/image-1.jpg",
+    "../Images/Slider/image-2.jpg",
+    "../Images/Slider/image-3.jpg",
+    
     
 ];
 function Change_Background(){
 
     slider.style.backgroundImage = `url('${images[current]}')`;
      current = (current + 1) % images.length;
-     console.log(current);
+   
 }
 Read_More_Button_Active();
 See_All_Products();
 Change_Background();
 setInterval(Change_Background, 4000);
-
 
 

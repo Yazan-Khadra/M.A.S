@@ -1,18 +1,18 @@
 @font-face { 
-    font-family: "Tajawal"; 
-    src: url("/Fonts/Tajawal/Tajawal-Regular.ttf"); 
+    font-family: "Inter"; 
+    src: url("../Fonts/Tajawal/Tajawal-Regular.ttf"); 
 }
 @font-face { 
     font-family: "29LT Bukra"; 
-    src: url("/Fonts/Bukra/29ltbukraregular.ttf"); 
+    src: url("../Fonts/Bukra/29ltbukraregular.ttf"); 
 }
 @font-face { 
     font-family: "Almarai"; 
-    src: url("/Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
+    src: url("../Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
 }
 @font-face { 
     font-family: "Montserrat"; 
-    src: url("/Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
+    src: url("../Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
 }
 
 
@@ -66,7 +66,7 @@
 }
 
 .intro {
-    background-image: url("/Images/backgrounds/contact-us-image.jpg");
+    background-image: url("../Images/backgrounds/contact-us-image.jpg");
     background-size:cover;
     background-position:center;
     position: relative;
@@ -81,51 +81,65 @@
  
 }
 /* intro-text */
+.intro .contaner {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;  
+}
 .intro-text {
     display: block;
-    position: relative;
+    flex: 1;
+    
 }
-.intro-text .contaner {
+.intro-text  .text {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top:-50px;
-}
-.intro-text .contaner .text {
-    display: block;
+    justify-content: center;
     position: relative;
-    height: 100%;
-    margin-top:0;
-}
-.intro-text .contaner .text h2 {
-    color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 54.179px;
-font-style: normal;
-font-weight: 700;
-line-height: 65.014px; /* 120% */
-  
-}
-.intro-text .contaner .text p {
-    color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 19.03px;
-font-style: normal;
-font-weight: 700;
-line-height: 11.287px; /* 125% */
-letter-spacing: 1.505px;
-margin-bottom: 10px;
+    
 
 }
-@media (max-width: 768px){
-    .contaner .text h2 {
-        font-size: 37.190px;
-    }
+.intro-text  .text h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 57.175px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68.61px; /* 120% */
 }
+
+
+
+
+.intro-text  .text p {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17.529px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11.912px; /* 125% */
+    letter-spacing: 1.588px;
+    text-transform: uppercase;
+    
+}
+
+    @media (max-width:768px) {
+        .intro-text {
+           margin-top: 20%;
+        }
+        .intro-text .text h2 {
+            font-size: 2.2rem;
+        }
+        .intro-text  .text  p {
+            padding: 3px;
+            font-size: 1.3rem;
+            
+        }
+    }
 .contact-us {
     position: relative;
     width: 100vw;
@@ -170,7 +184,7 @@ margin-bottom: 10px;
 
 }
 .contact-us .contaner .special-heading h1 {
-    color: rgba(0, 0, 0, 0.16);
+    color: #3A3B55;
     text-align: center;
     font-family: Montserrat;
     font-size: 69.228px;
@@ -179,8 +193,11 @@ margin-bottom: 10px;
     line-height: 69.228px; /* 100% */
     margin: 0;
 }
-
+.contact-us .contaner .special-heading h1 span {
+    color: #6D6D6D;
+}
 .contact-us .contaner .special-heading h2 {
+    position: relative;
     color: #D6D6D6;
     text-align: center;
     font-family: Inter;
@@ -188,14 +205,17 @@ margin-bottom: 10px;
     font-style: normal;
     font-weight: 700;
     line-height: 90.298px; /* 120% */
-    margin-top: -30px;
+    margin-top: -35px;
+    z-index: 1;
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
     .contact-us .contaner .special-heading h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
+        margin-top:80px;
+        
     }
     .contact-us .contaner .special-heading h2 {
-        font-size: 60px;
+        font-size: 2.4rem;
     }
 }
 .contact-us .contact-us-content {
@@ -260,7 +280,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 29.347px; /* 81.25% */
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
     .contact-us .contaner .contact-us-footer h1 {
         font-size: 26px;
 
@@ -288,10 +308,10 @@ line-height: 29.347px; /* 81.25% */
 .contact-us .contaner .contact-us-footer .map img {
     margin-bottom: 20%;
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
     .contact-us .contaner .contact-us-footer .map img {
-        width: 355px;
-        height: 255px;
+        width: 400px;
+        height: auto;
     }
 }
 /* animation */

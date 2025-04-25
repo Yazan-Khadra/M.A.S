@@ -1,4 +1,4 @@
-let nav_li = document.querySelectorAll(".links li");
+let nav_li = document.querySelectorAll(".links ul li");
 nav_li.forEach((element) => {
     element.addEventListener("click",function(e) {
         nav_li.forEach((li) => {

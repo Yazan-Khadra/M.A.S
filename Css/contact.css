@@ -263,6 +263,7 @@ font-style: normal;
 font-weight: 300;
 line-height: 35.05px; /* 62.5% */
 direction: ltr;
+text-decoration: none;
 }
 .contact-us .contaner .contact-us-footer {
     display: flex;
@@ -280,7 +281,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 29.347px; /* 81.25% */
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .contact-us .contaner .contact-us-footer h1 {
         font-size: 26px;
 

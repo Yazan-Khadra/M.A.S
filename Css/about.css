@@ -97,48 +97,81 @@ html, body {
     background-color: rgba(6, 12, 43, 0.60);
 }
 
-.intro .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.intro {
+    background-image: url("../Images/backgrounds/Home.png");
+    background-size:cover;
+    background-position:center;
+    position: relative;
+    width: 100vw;
+    height: 520px;
 }
-
+.blend {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 12, 43, 0.60);
+ 
+}
+/* intro-text */
+.intro .contaner {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;  
+}
 .intro-text {
     display: block;
     flex: 1;
+    
 }
-
-.intro-text .text {
+.intro-text  .text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-}
+    
 
-.intro-text .text h2 {
-    color: var(--secondary-color);
+}
+.intro-text  .text h2 {
+    color: #FFF;
     text-align: center;
-    font-family: "Inter";
+    font-family: Inter;
     font-size: 57.175px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 68.61px;
-    margin-bottom: 20px;
+    line-height: 68.61px; /* 120% */
 }
 
-.intro-text .text p {
-    color: var(--secondary-color);
+
+
+
+.intro-text  .text p {
+    color: #FFF;
     text-align: center;
-    font-family: "Inter";
+    font-family: Inter;
     font-size: 17.529px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 11.912px;
+    line-height: 11.912px; /* 125% */
     letter-spacing: 1.588px;
     text-transform: uppercase;
+    
 }
 
+    @media (max-width:768px) {
+        .intro-text {
+           margin-top: 20%;
+        }
+        .intro-text .text h2 {
+            font-size: 2.2rem;
+        }
+        .intro-text  .text  p {
+            padding: 3px;
+            font-size: 1.3rem;
+            
+        }
+    }
 /* Landing Section */
 .landing {
     width: 100vw;
@@ -155,7 +188,7 @@ html, body {
     font-weight: 700;
     line-height: 15.882px;
     padding-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .landing .content .title h3::after {
@@ -224,7 +257,12 @@ html, body {
     display: block;
     object-fit: cover;
 }
-
+    @media (max-width:767px) {
+        .landing .content .landing-footer h3 {
+            font-size: 1.4rem;
+            padding:3%;
+        }
+    }
 /* Why Us Section */
 .why-us {
     position: relative;
@@ -339,6 +377,39 @@ html, body {
     line-height: 38.911px;
     text-align: center;
 }
+@media (max-width:767px) {
+    .why-us .top-triangle {
+        width: 70%;
+       height: 30%;
+    }
+    .why-us .bottom-triangle  {
+        display: none;
+    }
+    .why-us .image img {
+        width: 150px;
+    }
+    .why-us-content .special-heading h1  {
+        font-size: 2.5rem;
+        margin: 25% auto 0 auto;
+
+    }
+    .why-us-content .special-heading h2 {
+        font-size: 2.1rem;
+       
+    }
+    .why-us-content .text .pre-title h3 {
+        position: relative;
+        font-size: 1.1rem;
+        z-index: 1;
+    }
+    .why-us-content .text .description p {
+        font-size: 1.0rem;
+        line-height: 40px;
+    }
+    .why-us-content .text .conclusion h3 {
+        font-size: 1rem;
+    }
+}
 
 /* Services Section */
 .services {
@@ -388,7 +459,7 @@ html, body {
 .srv::before {
     content: "";
     position: absolute;
-    width: 363.015px;
+    width: 333.015px;
     height: 2.264px;
     border-radius: 22.641px;
     background: var(--medium-gray);
@@ -446,6 +517,11 @@ html, body {
     font-weight: 700;
     line-height: 68.61px;
 }
+@media (max-width:767px) {
+    .end-statement-content h1 {
+        font-size: 1.8rem;
+    }
+}
 
 
 
@@ -496,24 +572,29 @@ html, body {
     }
     
     .why-us-content .special-heading h1 {
-        font-size: 80px;
-        margin-top: 25%;
+        font-size: 2.2rem;
+        margin:35% auto 0 auto;
     }
     
     .why-us-content .special-heading h2 {
-        font-size: 60px;
-        margin-top: -15%;
+        position: relative;
+        font-size: 40px;
+        margin-top: -41%;
+        z-index: 1;
     }
-    
+
+  
     .footer-content {
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
+        
     }
     
     .app-bar ul {
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 /* Large devices specific styles (992px and up) */

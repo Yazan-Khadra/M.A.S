@@ -545,27 +545,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 68.61px; /* 120% */
 }
-.end-statment .end-statment-content h1::before {
-    content: "";
-    position:absolute;
-    width: 136.585px;
-    height: 1.588px;
-    background-color: #151616;
-    top:50%;
-    right:0;
-    margin-right: 10%;
-}
 
-.end-statment .end-statment-content h1::after {
-    content: "";
-    position:absolute;
-    width: 136.585px;
-    height: 1.588px;
-    background-color: #151616;
-    top:50%;
-    left:0;
-    margin-left: 10%;
-}
 @media (max-width:768px) {
     .end-statment .end-statment-content h1 {
         font-size: 1rem;

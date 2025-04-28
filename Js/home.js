@@ -31,8 +31,9 @@ const slider = document.querySelector(".intro");
 const images = [
     "Images/backgrounds/Home.png",
     "Images/Slider/image-1.jpg",
-    "Images/Slider/image-2.jpg",
-    "Images/Slider/image-3.jpg",
+    // "Images/Slider/image-2.jpg",
+    // "Images/Slider/image-3.jpg",
+    "Images/Slider/image-4.jpg"
     
     
 ];

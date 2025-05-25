@@ -1,0 +1,37 @@
+.spinner-screen{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+}
+.spinner {
+  display: block;
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ccc;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    
+  }
+  .spinner-screen h1 {
+    color: #FFF;
+    text-align: right;
+    font-family: Almarai;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 50% */
+    display: none;
+  }
+  /* حركة الدوران */
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }

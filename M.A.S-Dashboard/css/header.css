@@ -1,0 +1,40 @@
+header {
+    position: relative;
+    display: block;
+   
+    background-color: var(--main-color);
+}
+ header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+header .logo {
+    position: relative;
+    z-index: 1;
+}
+header .logo img {
+    width: 196.038px;
+height: 91px;
+flex-shrink: 0;
+aspect-ratio: 216.04/91.00;
+}
+ header .container .title {
+    position: relative;
+    display: block;
+    padding: 10px;
+    flex: 1;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.86);
+}
+ header .container .title h1 {
+    color: #FFF;
+    text-align: right;
+    font-family: Almarai;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px; /* 83.333% */
+    padding: 15px
+}

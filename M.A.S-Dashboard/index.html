@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | الصفحة الرئيسية</title>
+    <!-- css files -->
+     <link rel="stylesheet" href="css/normalize.css">
+     <!-- include the main css file -->
+     <link rel="stylesheet" href="css/index.css">
+     <!-- header -->
+      <link rel="stylesheet" href="css/header.css">
+     <!-- side-bar -->
+      <link rel="stylesheet" href="css/side-bar.css">
+      <!-- view-actions "table-action bar" -->
+       <link rel="stylesheet" href="css/view-action.css">
+       <!-- add-product-overlay -->
+        <link rel = "stylesheet" href="css/add-product.css">
+        <!-- spinner -->
+         <link rel="stylesheet" href="css/spinner.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="icons/Logo.png" alt="">
+            </div>
+            <div class="title">
+                <h1>المنتجات</h1>
+            </div>
+        </div>
+    </header>
+       <div class="main-content">
+        <div class="container">
+            <div class="side-bar">
+                    <ul>
+                        <div class="list-item active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M9.5 3L16 6.33511V14.6729L9.5 18L3 14.6729V6.33511L9.5 3ZM14.3828 6.6558L9.5 4.15446L7.61719 5.11652L12.4688 7.63389L14.3828 6.6558ZM9.5 9.15714L11.3594 8.21112L6.5 5.69375L4.61719 6.6558L9.5 9.15714ZM4 7.48958V14.0315L9 16.597V10.0551L4 7.48958ZM10 16.597L15 14.0315V7.48958L10 10.0551V16.597Z" fill="white"/>
+                            </svg>
+                              <li ><a href="">المنتجات</a></li>
+                        </div>
+                        <div class="list-item ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M9.5 3L16 6.33511V14.6729L9.5 18L3 14.6729V6.33511L9.5 3ZM14.3828 6.6558L9.5 4.15446L7.61719 5.11652L12.4688 7.63389L14.3828 6.6558ZM9.5 9.15714L11.3594 8.21112L6.5 5.69375L4.61719 6.6558L9.5 9.15714ZM4 7.48958V14.0315L9 16.597V10.0551L4 7.48958ZM10 16.597L15 14.0315V7.48958L10 10.0551V16.597Z" fill="white"/>
+                              </svg>
+                              <li><a href="main-page-products.html">منتجات الصفحة الرئيسية</a></li>
+                        </div>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <rect x="0.5" y="0.5" width="5" height="5" rx="0.5" stroke="white"/>
+                                <rect x="8" width="6" height="6" rx="1" fill="white"/>
+                                <rect x="8.5" y="8.5" width="5" height="5" rx="0.5" stroke="white"/>
+                                <rect y="8" width="6" height="6" rx="1" fill="white"/>
+                              </svg>
+                            <li><a href="category.html">التصنيفات</a></li>
+                        </div>
+                    </ul>
+            </div>
+            <div class="view-action">
+                <div class="actions-header">
+                
+                    <div class="add-product">
+                        <span>اضافة منتج</span>
+                        <button id="add-product-btn">+</button>
+                    </div>
+                    <div class="class-list">
+                        <span>فرز حسب</span>
+                        <button id="classes-btn"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                            <path d="M7.91634 11.5833H1.58301H7.91634ZM6.33301 8.41663H1.58301H6.33301ZM4.74967 5.24996H1.58301H4.74967ZM9.49967 14.75H1.58301H9.49967ZM15.0413 16.3333V3.66663V16.3333ZM15.0413 16.3333L17.4163 13.9583L15.0413 16.3333ZM15.0413 16.3333L12.6663 13.9583L15.0413 16.3333ZM15.0413 3.66663L17.4163 6.04163L15.0413 3.66663ZM15.0413 3.66663L12.6663 6.04163L15.0413 3.66663Z" fill="black"/>
+                            <path d="M7.91634 11.5833H1.58301M6.33301 8.41663H1.58301M4.74967 5.24996H1.58301M9.49967 14.75H1.58301M15.0413 16.3333V3.66663M15.0413 16.3333L17.4163 13.9583M15.0413 16.3333L12.6663 13.9583M15.0413 3.66663L17.4163 6.04163M15.0413 3.66663L12.6663 6.04163" stroke="black" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                          <div class="drop-list">
+                            <ul>
+                              
+                            </ul>
+                          </div>
+                    </div>
+                   
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="content">
+                                    <span>اسم المنتج</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                                        <path d="M7.91634 11.5833H1.58301H7.91634ZM6.33301 8.41663H1.58301H6.33301ZM4.74967 5.24996H1.58301H4.74967ZM9.49967 14.75H1.58301H9.49967ZM15.0413 16.3333V3.66663V16.3333ZM15.0413 16.3333L17.4163 13.9583L15.0413 16.3333ZM15.0413 16.3333L12.6663 13.9583L15.0413 16.3333ZM15.0413 3.66663L17.4163 6.04163L15.0413 3.66663ZM15.0413 3.66663L12.6663 6.04163L15.0413 3.66663Z" fill="black"/>
+                                        <path d="M7.91634 11.5833H1.58301M6.33301 8.41663H1.58301M4.74967 5.24996H1.58301M9.49967 14.75H1.58301M15.0413 16.3333V3.66663M15.0413 16.3333L17.4163 13.9583M15.0413 16.3333L12.6663 13.9583M15.0413 3.66663L17.4163 6.04163M15.0413 3.66663L12.6663 6.04163" stroke="black" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                    <span>وصف المنتج</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                                        <path d="M7.91634 11.5833H1.58301H7.91634ZM6.33301 8.41663H1.58301H6.33301ZM4.74967 5.24996H1.58301H4.74967ZM9.49967 14.75H1.58301H9.49967ZM15.0413 16.3333V3.66663V16.3333ZM15.0413 16.3333L17.4163 13.9583L15.0413 16.3333ZM15.0413 16.3333L12.6663 13.9583L15.0413 16.3333ZM15.0413 3.66663L17.4163 6.04163L15.0413 3.66663ZM15.0413 3.66663L12.6663 6.04163L15.0413 3.66663Z" fill="black"/>
+                                        <path d="M7.91634 11.5833H1.58301M6.33301 8.41663H1.58301M4.74967 5.24996H1.58301M9.49967 14.75H1.58301M15.0413 16.3333V3.66663M15.0413 16.3333L17.4163 13.9583M15.0413 16.3333L12.6663 13.9583M15.0413 3.66663L17.4163 6.04163M15.0413 3.66663L12.6663 6.04163" stroke="black" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                    </div>
+                                </th>
+                                
+                                <th>
+                                    <div class="content">
+                                    <span>التصنيفات</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                                        <path d="M7.91634 11.5833H1.58301H7.91634ZM6.33301 8.41663H1.58301H6.33301ZM4.74967 5.24996H1.58301H4.74967ZM9.49967 14.75H1.58301H9.49967ZM15.0413 16.3333V3.66663V16.3333ZM15.0413 16.3333L17.4163 13.9583L15.0413 16.3333ZM15.0413 16.3333L12.6663 13.9583L15.0413 16.3333ZM15.0413 3.66663L17.4163 6.04163L15.0413 3.66663ZM15.0413 3.66663L12.6663 6.04163L15.0413 3.66663Z" fill="black"/>
+                                        <path d="M7.91634 11.5833H1.58301M6.33301 8.41663H1.58301M4.74967 5.24996H1.58301M9.49967 14.75H1.58301M15.0413 16.3333V3.66663M15.0413 16.3333L17.4163 13.9583M15.0413 16.3333L12.6663 13.9583M15.0413 3.66663L17.4163 6.04163M15.0413 3.66663L12.6663 6.04163" stroke="black" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        <span>الاجراء</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                                        <path d="M7.91634 11.5833H1.58301H7.91634ZM6.33301 8.41663H1.58301H6.33301ZM4.74967 5.24996H1.58301H4.74967ZM9.49967 14.75H1.58301H9.49967ZM15.0413 16.3333V3.66663V16.3333ZM15.0413 16.3333L17.4163 13.9583L15.0413 16.3333ZM15.0413 16.3333L12.6663 13.9583L15.0413 16.3333ZM15.0413 3.66663L17.4163 6.04163L15.0413 3.66663ZM15.0413 3.66663L12.6663 6.04163L15.0413 3.66663Z" fill="black"/>
+                                        <path d="M7.91634 11.5833H1.58301M6.33301 8.41663H1.58301M4.74967 5.24996H1.58301M9.49967 14.75H1.58301M15.0413 16.3333V3.66663M15.0413 16.3333L17.4163 13.9583M15.0413 16.3333L12.6663 13.9583M15.0413 3.66663L17.4163 6.04163M15.0413 3.66663L12.6663 6.04163" stroke="black" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+            </div>
+            </div>
+         
+        </div>
+       </div>
+       <div class="add-product-overlay">
+        
+          <div class="popup-box">
+            
+            
+            <!-- القسم الأيسر: إضافة صورة -->
+           <div class="image-container">
+  <label for="file-upload" class="custom-file-upload">
+    + Upload
+  </label>
+  <input id="file-upload" type="file" />
+  <img id="preview" alt="Preview">
+</div>
+
+        
+            <!-- القسم الأيمن: النموذج -->
+            <div class="form-section">
+              <div class="form-group">
+                <form>
+                <label>اكتب اسم المنتج هنا:</label>
+                <input type="text" id="product_name" placeholder="اسم المنتج" required>
+              </div>
+        
+              <div class="form-group">
+                <label>اكتب الوصف هنا:</label>
+                <input type="text" id="product_description" placeholder="وصف المنتج" required>
+              </div>
+        
+              <div class="form-group">
+                <label>اكتب اسم التصنيف هنا:</label>
+                <select name="class" id="class_value" >
+                </select>
+              </div>
+              <div class="form-group">
+                                <button id="favourite" class="favourite-icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" width="24" height="24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </button>
+
+              </div>
+        
+              <div class="buttons">
+                <button class="save" type="submit">حفظ</button>
+                <button class="cancel" id="cancel">إلغاء الأمر</button>
+              </div>
+            </form>
+            </div>
+            <div class="close-overlay-button">
+              <button id="close-overlay-button">X</button> 
+          
+            </div>
+          </div>
+          
+      </div>
+       <div class="delete-overlay">
+        <div class="delete-overlay-content">
+          <div class="title">
+            <h2>هل انت متأكد من حذف العنصر المحدد؟</h2>
+          </div>
+          <div class="buttons">
+          <button id ="delete-btn" class="delete-btn">حذف</button>
+          <button id ="cancel-delete-btn" class="cancle-delete-btn">الغاء الامر</button>
+        </div>
+          
+        </div>
+      </div>
+      <div class="spinner-screen" id="spinner-screen">
+         <div id="spinner" class="spinner">
+          
+         </div>
+         <h1 id="done-statment">تم اضافة العنصر بنجاح</h1>
+    </div>
+<script src="js/add-product.js"></script>
+<!-- delete actions -->
+ <script src="js/delete-product.js"></script>
+ <!-- api files -->
+  <!-- add-product-overlay -->
+  <script src="Api-Service-Provider/products-page/product-api.js"></script>
+  <!-- main-page -->
+   <script src="Api-Service-Provider/products-page/main-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@font-face { 
+    font-family: "Inter"; 
+    src: url("../Fonts/Tajawal/Tajawal-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "29LT Bukra"; 
+    src: url("../Fonts/Bukra/29ltbukraregular.ttf"); 
+}
+@font-face { 
+    font-family: "Almarai"; 
+    src: url("../Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "Montserrat"; 
+    src: url("../Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+
+}
+ html,body {
+    overflow-x: hidden;
+   
+ }
+:root {
+    --main-color: #151635;
+    --secondry-color: #FFF;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+/* header */
+
+.main-content .container {
+    display: grid;
+    grid-template-columns: 17.9% 1fr;
+    padding: 0;
+    
+}
+
+

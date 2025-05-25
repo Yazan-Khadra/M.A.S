@@ -1,0 +1,231 @@
+@font-face { 
+    font-family: "Inter"; 
+    src: url("../Fonts/Tajawal/Tajawal-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "29LT Bukra"; 
+    src: url("../Fonts/Bukra/29ltbukraregular.ttf"); 
+}
+@font-face { 
+    font-family: "Almarai"; 
+    src: url("../Fonts/Almarai/alfont_com_ArbFONTS-Almarai-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "Montserrat"; 
+    src: url("../Fonts/Montaserat/Montserrat-Arabic-Regular.ttf"); 
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+  
+  }
+   html,body {
+      overflow-x: hidden;
+     
+   }
+  :root {
+      --main-color: #151635;
+      --secondry-color: #FFF;
+  }
+
+.view-action {
+    position : relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #C2C3DE;
+
+}
+.view-action .actions-header {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto auto 30px;
+}
+.actions-header .add-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 162px;
+    padding: 9px 13px;
+    border-radius: 9px;
+    border: 2px solid #4259EE;
+}
+
+.add-product span {
+    color: #383838;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    white-space: nowrap;
+}
+.add-product button {
+    color: #383838;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.actions-header .class-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 162px;
+    padding: 9px 13px;
+    border-radius: 9px;
+    border: 2px solid #4259EE;
+}
+
+.class-list span {
+    color: #383838;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    white-space: nowrap;
+}
+ button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.class-list button svg {
+    width: 19px;
+height: 19px;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+cursor: pointer;
+}
+/* classes drop list */
+.drop-list {
+    display: block;
+    position: absolute;
+    width: 200px;
+    background-color: var(--main-color);
+   top: calc(100% + 20px);
+   z-index: 2;
+   opacity: 0;
+   pointer-events: none;
+}
+.drop-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+.drop-list ul li {
+    position: relative;
+    color: #FFF;
+font-family: Almarai;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 153.846% */
+padding: 15px;
+padding-bottom: 5px;
+width: 100%;
+cursor: pointer;
+}
+.drop-list ul li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    top:calc(100% + 10px);
+    right: 0;
+}
+/* table */
+.main-content .table {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+}
+.main-content .table table thead th {
+width: 299px;
+padding: 20px;
+background-color: #15F5BA9E;
+}
+.main-content .table table thead th .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-content .table table thead th span {
+color: #000;
+text-align: right;
+font-family: Almarai;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 125% */
+}
+.main-content .table table tbody td {
+    position: relative;
+    color: #000;
+text-align: right;
+font-family: Almarai;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 153.846% */
+padding-right:15px;
+}
+.custom-table th,
+.custom-table td {
+  position: relative;
+  padding: 10px;
+  border: none; /* إزالة الحدود الأصلية إن وُجدت */
+}
+
+.main-content .table table thead th::after,
+.main-content .table table tbody td::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #000000; /* الخط الأفقي */
+}
+
+.main-content .table table thead th::before,
+.main-content .table table tbody td::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000000; /* الخط العمودي */
+}
+.U-D {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+}

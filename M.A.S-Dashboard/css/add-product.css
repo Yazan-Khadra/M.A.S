@@ -1,0 +1,257 @@
+* {
+    font-family: "29LT Bukra";
+   
+}
+  .add-product-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* الإطار الأبيض */
+  .popup-box {
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    direction: rtl;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    gap: 10;
+  }
+  
+  /* القسم الأيسر - لإضافة صورة */
+  .image-section {
+    width: 40%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #eee;
+  }
+  
+  .image-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-placeholder img {
+    width: 50px;
+    opacity: 0.4;
+  }
+  
+  /* القسم الأيمن - النموذج */
+  .form-section {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* المواد - نقاط ملونة */
+  .materials span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: "29LT Bukra";
+  }
+  
+  
+  
+  /* الأزرار */
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "29LT Bukra";
+  }
+  
+  .save {
+    background-color: #03bfb2;
+    color: white;
+  }
+  
+  .cancel {
+    background-color: #ccc;
+    color: black;
+  }
+  .custom-file-upload {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 250px;
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+  }
+
+  .custom-file-upload:hover {
+    border-color: #888;
+    color: #666;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  img#preview {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    display: none;
+  }
+
+  .image-container {
+    width: 300px;
+    height: 480px;
+    position: relative;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .popup-box .close-button {
+    padding: 0;
+  }
+  
+  select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  select:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  .delete-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+   
+  }
+  .delete-overlay-content {
+    width: 666px;
+    border-radius: 13px;
+    background: #DDD;
+  }
+  .delete-overlay-content .title h2 {
+    color: #000;
+    text-align: right;
+    font-family: Almarai;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 83.333% */
+    padding: 25px 25px 15px 25px;
+  }
+  .delete-overlay-content .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    text-align: right;
+    font-family: Almarai;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 100% */  
+    cursor: pointer;
+    
+  }
+  .delete-overlay-content .buttons .delete-btn {
+    width: 106px;
+    padding: 10px;
+    border-radius: 14px;
+    color: #FFF;
+    background: rgba(252, 54, 54, 0.72);
+    
+  }
+  .delete-overlay-content .buttons .cancle-delete-btn {
+    width: 118px;
+    padding: 10px;
+    border-radius: 14px;
+    background: rgba(168, 168, 168, 0.76);
+    color: #FFF;
+  }
+  .favourite-icon {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+   
+    padding: 5px;
+  }
+
+  .favourite-icon svg {
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+  }
+
+  .favourite-icon:hover svg {
+    transform: scale(1.1);
+  }
+
+  .favourite-icon.active svg {
+    fill: red;
+  }
